@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "MainSystem.h"
 
 namespace Observer {
@@ -38,5 +39,36 @@ void Subject::Notify()
 	{
 		observer->Update(*this);
 	}
+}
+
+/**
+*@file ClockTimer.cpp
+*@brief Constructor
+*@author Choi Youngchan
+*@date 2020-12-20
+*/
+ClockTimer::ClockTimer()
+{
+	m_hour = 0;
+	m_minute = 0;
+	m_second = 0;
+}
+
+/**
+*@file ClockTimer.cpp
+*@brief SetTime
+*@param hour set now Hour
+*@param minute set now minute
+*@param second set now second
+*@author Choi Youngchan
+*@date 2020-12-20
+*/
+void ClockTimer::SetTime(int hour, int minute, int second)
+{
+	m_hour = hour;
+	m_minute = minute;
+	m_second = second;
+
+	Notify();
 }
 }
