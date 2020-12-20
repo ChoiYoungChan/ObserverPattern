@@ -152,14 +152,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AnalogClock.h" />
-    <ClInclude Include="ClockTimer.h" />
     <ClInclude Include="DigitalClock.h" />
     <ClInclude Include="MainSystem.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnalogClock.cpp" />
-    <ClCompile Include="ClockTimer.cpp" />
     <ClCompile Include="DigitalClock.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainSystem.cpp" />
